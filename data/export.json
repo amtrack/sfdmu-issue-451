@@ -1,0 +1,15 @@
+{
+  "objects": [
+    {
+      "query": "SELECT Name FROM Account WHERE Name LIKE 'Test SFDMU%'",
+      "operation": "Upsert",
+      "externalId": "Name"
+    },
+    {
+      "query": "SELECT Name, StageName, CloseDate, Account.Name FROM Opportunity WHERE Name LIKE 'Test SFDMU%'",
+      "operation": "Upsert",
+      "externalId": "Name"
+    }
+  ],
+  "excludeIdsFromCSVFiles": true
+}

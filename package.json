@@ -1,0 +1,13 @@
+{
+  "name": "sfdmu-issue-451",
+  "private": true,
+  "version": "0.0.0-development",
+  "scripts": {
+    "develop": "bash scripts/develop.sh",
+    "test": "bash scripts/test.sh"
+  },
+  "devDependencies": {
+    "sfdmu": "4.13.4",
+    "sfdx-cli": "7.147.1"
+  }
+}
