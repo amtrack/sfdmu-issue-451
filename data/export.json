@@ -1,14 +1,70 @@
 {
   "objects": [
     {
-      "query": "SELECT Name FROM Account WHERE Name LIKE 'Test SFDMU%'",
+      "query": "SELECT readonly_false FROM Account WHERE Name LIKE 'Test SFDMU%'",
       "operation": "Upsert",
-      "externalId": "Name"
+      "externalId": "Name",
+      "excludedFields": [
+        "AccountNumber",
+        "AccountSource",
+        "AnnualRevenue",
+        "BillingCity",
+        "BillingCountry",
+        "BillingGeocodeAccuracy",
+        "BillingLatitude",
+        "BillingLongitude",
+        "BillingPostalCode",
+        "BillingState",
+        "BillingStreet",
+        "CleanStatus",
+        "Description",
+        "DunsNumber",
+        "Fax",
+        "Industry",
+        "Jigsaw",
+        "NaicsCode",
+        "NaicsDesc",
+        "NumberOfEmployees",
+        "OperatingHoursId",
+        "Ownership",
+        "ParentId",
+        "Phone",
+        "Rating",
+        "ShippingCity",
+        "ShippingCountry",
+        "ShippingGeocodeAccuracy",
+        "ShippingLatitude",
+        "ShippingLongitude",
+        "ShippingPostalCode",
+        "ShippingState",
+        "ShippingStreet",
+        "Sic",
+        "SicDesc",
+        "Site",
+        "TickerSymbol",
+        "Tradestyle",
+        "Type",
+        "Website",
+        "YearStarted"
+      ]
     },
     {
-      "query": "SELECT Name, StageName, CloseDate, Account.Name FROM Opportunity WHERE Name LIKE 'Test SFDMU%'",
+      "query": "SELECT readonly_false FROM Opportunity WHERE Name LIKE 'Test SFDMU%'",
       "operation": "Upsert",
-      "externalId": "Name"
+      "externalId": "Name",
+      "excludedFields": [
+        "Amount",
+        "CampaignId",
+        "Description",
+        "ForecastCategoryName",
+        "IsPrivate",
+        "LeadSource",
+        "NextStep",
+        "Pricebook2Id",
+        "Probability",
+        "TotalOpportunityQuantity",
+        "Type"
+      ]
     }
   ],
   "excludeIdsFromCSVFiles": true
