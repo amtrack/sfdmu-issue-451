@@ -7,7 +7,7 @@
     "test": "bash scripts/test.sh"
   },
   "devDependencies": {
-    "sfdmu": "4.13.4",
+    "sfdmu": "4.14.2",
     "sfdx-cli": "7.147.1"
   }
 }
